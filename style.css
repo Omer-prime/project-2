@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:wght@300;500&family=Sedgwick+Ave+Display&display=swap');
+*{ background-color: antiquewhite;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#minicircle{
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 50%;
+    background-color: #020202;
+    transition:all cubic-bezier(0.19, 1, 0.22, 1)0.8s;
+  }
+*::selection{
+    color: white;
+    background-color: black;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    background-color: white;
+}
+#home{
+    width: 100%;
+    min-height: 100vh;
+}
+#nav{
+    padding: 30px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Itim', cursive;
+}
+#nav h1{
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+#right{
+    padding: 30px 50px;
+    margin: 0px 30px;
+    gap: 40px;
+    display: flex;
+}
+#nav a{
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+   letter-spacing: -1px;
+}
+#nav i{
+    margin: 4px;
+    font-size: 1.1vw;
+}
+#home #homemain {
+width: 100%;
+padding: 15vw 15vw;
+
+}
+#homemain h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1vw;
+    font-weight: lighter;
+}
+.heading{
+    display: flex;
+    gap: 40px;
+} 
+#homemain .heading h1{
+    font-size: 6vw;
+    font-weight: 90vw;
+    letter-spacing: -3px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: .3px  black;
+}
+#homemain .heading h1:hover{
+color: black;
+}
+#homelast{
+    padding: 7vw 12vw;
+    padding-left: 1vw;
+    padding-right: 18vw;
+}
+#homelast p{
+  font-size: 1.2vw;
+  font-weight: 440px;
+  font-family: 'Roboto', sans-serif;
+}
+#homelast p::selection{
+    color: white;
+    background-color: black;
+}
+#featured{
+    padding: 7vw 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fheading>h1{
+    font-size: 6vw;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+}
+.fheading>h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: .5px black;
+}
+#fimages{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4vw;
+    width: 100%;
+   height: 100vh;
+}
+#fleft{
+    width: 45%;
+    height: inherit;
+ 
+    overflow: hidden;
+}
+#fleftelem{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    width: 100%;
+    height: inherit;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+#fleftelem h1{
+    font-size: 2.8vw;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1.6vw 0;
+}
+#fleftelem h4{
+    opacity: .7;
+}
+#fleftelem h2{
+font-size: 1.2vw;
+font-weight: 400;
+}
+#fright{
+    width: 45%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#fright .images{
+    width: 90%;
+    height: 90%;}
+#fright .images img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   border-radius: 12px;
+}
+.btn{
+    border-radius: 75px;
+    background-color: rgb(243, 239, 234);
+    padding: 1vw 1vw;
+    font-size: 1.1vw;
+    cursor: pointer;
+    font-family: 'Itim', cursive;
+    align-items: center;
+    border: 2px solid rgb(161, 161, 161);
+    justify-content:center ;
+    margin: 7vw;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: rgb(231, 217, 196);
+}
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+#dev h1{
+    font-size: 3.5vw;
+    font-weight: 400;
+    width: 60%;
+    line-height: 1 ;
+    font-family: 'Roboto', sans-serif;
+}
+#dev p{
+    font-size: 1vw;
+    font-weight: 370;
+    line-height: 1 ;
+    font-family: 'Roboto', sans-serif;
+    width: 60%;
+    margin-top: 3vw;
+    line-height: 1;
+}
+#slides{
+display: flex;
+padding: 3vw 5vw;
+justify-content: space-between;
+font-family: 'Roboto', sans-serif;
+}
+.slide{
+    width: 30%;
+}
+.slide .img{
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide .tag{
+    margin: 20px 0;
+    width: fit-content;
+    padding: 10px 23px;
+    background-color: #dadada;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.slide .tag:hover{
+    background-color: #a39c9c;
+}
+.slide h3{
+    font-size: 1.6vw;
+    font-weight: 390;
+    letter-spacing: -.5px;
+}
+.btn2{
+    border-radius: 75px;
+    background-color: rgb(243, 239, 234);
+    padding: 1vw 1vw;
+    font-size: 1.1vw;
+    cursor: pointer;
+    font-family: 'Itim', cursive;
+    align-items: center;
+    border: 2px solid rgb(161, 161, 161);
+    justify-content:center ;
+    margin-left: 45vw;
+    font-weight: 600;
+}
